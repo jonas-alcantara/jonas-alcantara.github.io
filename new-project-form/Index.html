@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div style="float: left;">
+            <a class="header__back" href="#"> <span class="arrow"></span></a>
+        </div>
+        <h1 class="header__title">New Project</h1>
+    </div>
+    <form id="newProjectForm">
+        <div class="row form">
+            <div class="one-fourth">
+                <h2 class="form__header">
+                    Project Details
+                </h2>
+            </div>
+            <div class="one-fourth">
+                <h2 class="form__header">
+                    Ecommerce Pages
+                </h2>
+            </div>
+            <div class="one-fourth">
+                <h2 class="form__header">
+                    Additional Pages
+                </h2>
+            </div>
+            <div class="one-fourth">
+                <h2 class="form__header">
+                    Additional Components
+                </h2>
+            </div>
+        </div>
+        <div class="row form">
+            <div class="one-fourth">
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Product Details</label>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="label">Project Name</label>
+                                <input type="text" placeholder="LunaPads">
+                                <label class="label">Website Type</label>
+                                <select name="carlist" form="newProjectForm">
+                                    <option value="Shopify">Shopify-Ecommerce</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="label">Project Type</label>
+                                <select name="carlist" form="newProjectForm">
+                                    <option value="Redesign">Website-Redesign</option>
+                                </select>
+                                <label class="label">Current Website URL</label>
+                                <input type="text" placeholder="LunaPads">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="input-col">
+                        <div class="block__head">
+                            <label class="block__title">Navigation / Sitemap</label>
+                        </div>
+                        <div class="block__body">
+                            <textarea placeholder="Please enter"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="input-col">
+                        <div class="block__head">
+                            <label class="block__title">Additional Details</label>
+                        </div>
+                        <div class="block__body">
+                            <label class="label">Assets</label>
+                            <input type="text" placeholder="Please enter">
+                            <label class="label">Additional Notes</label>
+                            <input type="text" placeholder="Please enter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="one-fourth">
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Homepage</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Main Banner
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Products (e.g. Best Seller)
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Instagram Feed
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Megamenu
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Product Categories
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Blog
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__foot">
+                        <label class="checkContainer">INCLUDE COMMENTS
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Category Listing</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Category Images
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Brands
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Sub Categories
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__foot">
+                        <label class="checkContainer">INCLUDE COMMENT
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Product Listing</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Category Image
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Standard Shopify Filter
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Custom Layered Navigation
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Sale Price Badge
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Out Of Stock Badge
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Color Swatches
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__foot">
+                        <label class="checkContainer">INCLUDE COMMENT
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Product Details</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Reviews
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Sold Out
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Related Products
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Product Upsells
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Custom Metafields
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Multi Location Inventory
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Sale Price
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Reviews
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Subscription
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Fit Guide / Size Chart
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Video
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Add to Wishlist
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="block__foot">
+                            <label class="checkContainer">INCLUDE COMMENT
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Cart</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">INCLUDE COMMENT
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Side Cart
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Product Upsell
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__foot">
+                        <label class="checkContainer">INCLUDE COMMENT
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="one-fourth">
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">System Pages</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Login
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Reset Password
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">User Dashboard
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">B2B Order
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Gift Card
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Sign Up
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Recharge Dashboard
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__foot">
+                        <label class="checkContainer">INCLUDE COMMENT
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <textarea placeholder="Add Comment"></textarea>
+
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">System Pages</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">About Us
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">FAQ
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Blog Listing
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Shipping & Returns
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Customer Service
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Contact
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Store Locator
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Blog Details
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Google Map Page
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Decision Tree / Quiz
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__foot">
+                        <label class="checkContainer">INCLUDE COMMENT
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="one-fourth">
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Responsive</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Homepage
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Product Details
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Product Listing
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">All Pages
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Additional Components</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Newsletter Signup Modal
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Favicons
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Dimensions Guide
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Geo Redirect Bar
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Registry
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Social media image <br>
+                                    1200 x 628 px
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Style Guide
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Apple Icons
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Redirection State
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Predictive Search
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Construction Guide
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__head">
+                        <label class="block__title">Email Templates</label>
+                        <div style="float: right;">
+                            <label class="select-all-checkContainer">SELECT ALL
+                                <input type="checkbox" checked="checked">
+                                <span class="select-all-checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="block__body row">
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Dimensions Guide
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Geo Redirect Bar
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Registry
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Social media image <br>
+                                    1200 x 628 px
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="one-half">
+                            <div class="input-col">
+                                <label class="checkContainer">Gift Card
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">All Categories
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="input-col">
+                                <label class="checkContainer">Splash(for sale)
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block__body">
+                        <label style="font-weight: bold !important;margin-left:5px" class="label">Select
+                            Designer</label>
+                        <div style="margin-top:5px" class="row">
+                            <div class="one-half">
+                                <div class="input-col">
+                                    <select name="carlist" form="newProjectForm">
+                                        <option value="Shopify">Marius</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="one-half">
+                                <input class=".submit-button" type="submit" value="SUBMIT" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
